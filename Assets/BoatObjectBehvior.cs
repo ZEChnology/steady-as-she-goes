@@ -32,5 +32,5 @@ public class BoatObjectBehvior : MonoBehaviour {
         {
             print("fuck off");
         }
-	}
+    }
 }
