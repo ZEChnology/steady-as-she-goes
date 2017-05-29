@@ -17,19 +17,15 @@ public class BoatObjectBehvior : MonoBehaviour {
         }
         else if (Input.GetKey("down"))
         {
-            transform.Translate(Vector3.down* movementSpeed * Time.deltaTime);
+            transform.Translate(Vector3.down * movementSpeed * Time.deltaTime);
         }
-        else if (Input.GetKey("right"))
+        if (Input.GetKey("right"))
         {
-            transform.Translate(Vector3.right * movementSpeed * Time.deltaTime);
+            transform.Rotate(0, 0, -5, Space.Self);
         }
         else if (Input.GetKey("left"))
         {
-            transform.Translate(Vector3.left * movementSpeed * Time.deltaTime);
-        }
-        else
-        {
-            print("fuck off");
+            transform.Rotate(0, 0, 5, Space.Self);
         }
     }
 }
