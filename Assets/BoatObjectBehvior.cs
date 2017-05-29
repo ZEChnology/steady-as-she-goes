@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BoatObjectBehvior : MonoBehaviour {
-    public float movementSpeed = 1;
+    public float movementSpeed = 0;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    // Use this for initialization
+    void Start () {
+    }
+
+    // Update is called once per frame
+    void Update () {
         if (Input.GetKey("up"))
         {
             transform.Translate(Vector3.up * movementSpeed * Time.deltaTime);
@@ -32,5 +31,5 @@ public class BoatObjectBehvior : MonoBehaviour {
         {
             print("fuck off");
         }
-	}
+    }
 }
