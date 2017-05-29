@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BoatObjectBehvior : MonoBehaviour {
-    public float movementSpeed = 0;
+    public float movementSpeed = 1;
 
     // Use this for initialization
     void Start () {
